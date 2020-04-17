@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Visualizing the Urban Dictionary</title>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="https://an.drew.hu/favicon.png">
+</head>
+<body>
+<svg></svg>
+<div id=menu>
+    <h1 id="title">Visualizing the Urban Dictionary</h1>
+
+    <div class="nav">
+        <a id="names" class="active" href="javascript:void(0)">Names</a> &#8226; <a id="starsigns" href="javascript:void(0)">Star signs</a>
+    </div>
+
+
+    <div id="description">
+        <p>
+            This interactive map shows the relationship between words according to their definitions on the <a
+                target="_blank" href="https://www.urbandictionary.com/">Urban Dictionary</a>.
+            See the <!--<a href=''>blog post</a> or --><a href="https://github.com/andrewhu/urban-dictionary">GitHub repo</a> for details.
+        </p>
+
+        <p id="definition">
+            Click and scroll to pan and zoom. Click on a word to see its definition.
+        </p>
+
+    </div>
+    <div id="arrow-wrap">
+        <i id="arrow"></i>
+    </div>
+
+</div>
+</body>
+
+<script src="/js/d3.v5.min.js"></script>
+<script src="/js/main.js"></script>
+
+</html>

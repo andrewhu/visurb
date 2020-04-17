@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "avenir";
+    src: url("/fonts/avenir-roman.otf")
+}
+@font-face {
+    font-family: "playfair-display";
+    src: url("/fonts/playfairdisplay.ttf")
+}
+* {
+    padding: 0;
+    margin: 0
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "avenir";
+    overflow: hidden
+}
+
+a {
+    transition: 0.1s ease-out
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    background: #fdfdf9;
+
+}
+
+svg text::selection {
+    background: transparent;
+}
+svg text::-moz-selection {
+    background: transparent;
+}
+
+#menu {
+    margin: 2vh;
+    padding: 2vh;
+    height: 92vh;
+    width: 280px;
+    border: 3px solid #706957;
+    position: absolute;
+    background: #f2eecb;
+    color: #48473c;
+    overflow-y: auto;
+}
+
+#title {
+    /*font-weight: 800;*/
+    margin-bottom: 20px;
+    /*font-style: italic;*/
+    font-family: 'playfair-display', serif;
+}
+
+#menu p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+#menu a {
+    color: inherit;
+}
+
+#menu a:visited {
+    color: inherit;
+}
+
+#menu a:hover {
+    color: #918e79
+}
+
+#arrow-wrap {
+    text-align: center;
+}
+
+#arrow {
+    border: solid #7e7e76;
+    border-width: 0 2px 2px 0;
+    display: none;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #menu {
+        width: calc(100vw - 8vh);
+        height: auto;
+    }
+}
+
+.nav {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.nav li {
+    display: inline-block
+}
+
+.nav a, .nav a:visited {
+    color: #918e79 !important
+}
+
+.nav a:hover {
+    color: #48473c !important
+}
+
+.nav a.active {
+    color: #48473c !important;
+    cursor: default;
+}
+
+.underline {
+    text-decoration: underline
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#canvas {
+    cursor: grab;
+}
+
+#canvas:active {
+    cursor: grabbing
+}
+
+@media(max-width: 768px) {
+    #title {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    #menu {
+        border-width: 2px;
+    }
+
+    .nav {
+        margin-bottom: 10px;
+    }
+    #description {
+        display: none;
+    }
+    #arrow {
+        display: inline-block
+    }
+}
