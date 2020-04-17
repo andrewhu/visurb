@@ -5,6 +5,25 @@
 var names, starsigns;
 var active;
 
+var open = false;
+
+document.getElementById('arrow').addEventListener('click', function() {
+    console.log("arrow click")
+    document.getElementById('description').style.display = open ? 'none' : 'inline-block';
+    document.getElementById('arrow').style.transform = open ? 'rotate(45deg)' : 'rotate(-135deg)';
+    document.getElementById('arrow').style['-webkit-transform'] = open ? 'rotate(45deg)' : 'rotate(-135deg)';
+    open = !open;
+})
+
+
+// Get *actual* viewport size and set menu max height accordingly
+const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+if(vw < 1024) {
+    document.getElementById('menu').style['max-height'] = 0.90*vh + 'px';
+}
+
 fetch("/data/names.json")
     .then(res => res.json())
     .then(data => {
