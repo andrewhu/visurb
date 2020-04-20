@@ -24,7 +24,7 @@ if(vw < 1024) {
     document.getElementById('menu').style['max-height'] = 0.90*vh + 'px';
 }
 
-fetch("/data/names.json")
+fetch("https://an.drew.hu/projects/visurb/data/names.json")
     .then(res => res.json())
     .then(data => {
         names = data;
@@ -32,7 +32,7 @@ fetch("/data/names.json")
         active = 'names';
     });
 
-fetch("/data/starsigns.json")
+fetch("https://an.drew.hu/projects/visurb/data/starsigns.json")
     .then(res => res.json())
     .then(data => {
         starsigns = data;
