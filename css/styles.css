@@ -1,16 +1,16 @@
 @font-face {
     font-family: "avenir";
-    src: url("https://an.drew.hu/projects/visurb/fonts/avenir-roman.woff2") format('woff2'),
-         url("https://an.drew.hu/projects/visurb/fonts/avenir-roman.woff") format('woff'),
-         url("https://an.drew.hu/projects/visurb/fonts/avenir-roman.ttf") format('truetype'),
-         url("https://an.drew.hu/projects/visurb/fonts/avenir-roman.eot") format('embedded-opentype');
+    src: url("https://visurb.drew.hu/fonts/avenir-roman.woff2") format('woff2'),
+         url("https://visurb.drew.hu/fonts/avenir-roman.woff") format('woff'),
+         url("https://visurb.drew.hu/fonts/avenir-roman.ttf") format('truetype'),
+         url("https://visurb.drew.hu/fonts/avenir-roman.eot") format('embedded-opentype');
 }
 @font-face {
     font-family: "playfair-display";
-    src: url("https://an.drew.hu/projects/visurb/fonts/PlayfairDisplay-BoldItalic.woff2") format('woff2'),
-         url("https://an.drew.hu/projects/visurb/fonts/PlayfairDisplay-BoldItalic.woff") format('woff'),
-         url("https://an.drew.hu/projects/visurb/fonts/PlayfairDisplay-BoldItalic.ttf") format('truetype'),
-         url("https://an.drew.hu/projects/visurb/fonts/PlayfairDisplay-BoldItalic.eot") format('embedded-opentype');
+    src: url("https://visurb.drew.hu/fonts/PlayfairDisplay-BoldItalic.woff2") format('woff2'),
+         url("https://visurb.drew.hu/fonts/PlayfairDisplay-BoldItalic.woff") format('woff'),
+         url("https://visurb.drew.hu/fonts/PlayfairDisplay-BoldItalic.ttf") format('truetype'),
+         url("https://visurb.drew.hu/fonts/PlayfairDisplay-BoldItalic.eot") format('embedded-opentype');
     font-weight: bold;
     font-style: italic;
 }
