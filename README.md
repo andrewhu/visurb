@@ -2,7 +2,8 @@
 
 Visualizing the Urban Dictionary with BERT sentence embeddings and t-SNE
 
-Demo: [visurb.drew.hu](https://visurb.drew.hu)
+Demo: [visurb.drew.hu](https://visurb.drew.hu) \
+Blog post: [blog.drew.hu/visurb](https://blog.drew.hu/visurb)
 
 <img src="splash.png" alt="splash image" width="80%"/>
 
